@@ -3,6 +3,47 @@
     <channel>
         <title>Mood Radio</title>
         <item>
+            <title>0.1.1</title>
+            <pubDate>Wed, 25 Nov 2026 21:34:20 +0500</pubDate>
+            <link>https://mood-radio.gorbunov.dev</link>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>27.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<style>
+:root { color-scheme: light dark; --ground: #f4f1ea; --ink: #13262d; --soft: #4b5d63; --accent: #e85f12;
+        --rule: #ddd6c8; --code: #ebe6dc; }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #13262d; --ink: #f4f1ea; --soft: #b9c3c4; --accent: #ff8a45; --rule: #2a3f47; --code: #1d343c; }
+}
+html, body { background: var(--ground); color: var(--ink); }
+body { font: 13px/1.5 -apple-system, system-ui, sans-serif; margin: 0; padding: 14px 18px 18px; }
+h1 { font-size: 17px; font-weight: 700; margin: 0 0 2px; letter-spacing: -0.01em; }
+h1 + p.date { color: var(--soft); font-size: 12px; margin: 0 0 12px; }
+h2 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent);
+     margin: 16px 0 6px; padding-top: 10px; border-top: 1px solid var(--rule); }
+h1 + h2, h1 + p.date + h2 { border-top: 0; padding-top: 0; }
+p { margin: 0 0 8px; }
+ul { margin: 0 0 8px; padding: 0; list-style: none; }
+li { position: relative; padding-left: 16px; margin: 0 0 5px; }
+li::before { content: ""; position: absolute; left: 2px; top: 0.55em; width: 6px; height: 6px; border-radius: 50%;
+             border: 1.5px solid var(--accent); box-sizing: border-box; }
+code { font: 12px ui-monospace, SFMono-Regular, monospace; background: var(--code); padding: 1px 4px;
+       border-radius: 4px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+<h1>Mood Radio 0.1.1</h1>
+<p class="date">25 November 2026</p>
+<h2>Fixed</h2>
+<ul><li>Songs would not play on some Macs: a track showed in the queue, then disappeared. Mood Radio added songs to the queue while Apple Music was still loading it, which made the Apple Music player quit. It now waits until the queue is ready.</li></ul>
+<h2>Changed</h2>
+<ul><li>If Apple Music skips several songs in a row without playing them, Mood Radio says so and stops adding more.</li><li><strong>Copy Diagnostics</strong> now includes your Apple Music subscription status and storefront, the last message shown, and Mood Radio's own log from the last 30 minutes. The log has track identifiers, but no song titles or artist names.</li></ul>
+<h2>Reporting a problem</h2>
+<ul><li>Reproduce it, then <strong>Settings › Data › Copy Diagnostics</strong> before you quit, and paste it into a message.</li></ul>
+]]></description>
+            <enclosure url="https://github.com/gorbunov/mood-radio-releases/releases/download/v0.1.1/MoodRadio.dmg" length="10139858" type="application/octet-stream" sparkle:edSignature="F9DHPNeqojb/Tsa4OOcYDG3M9jCGcyqyxWdjSUr55g8OqpjdPw/udlWR6ktuFtFotoeBABWZR/UrR+wmmpAPCQ=="/>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Wed, 25 Nov 2026 20:12:22 +0500</pubDate>
             <link>https://mood-radio.gorbunov.dev</link>
